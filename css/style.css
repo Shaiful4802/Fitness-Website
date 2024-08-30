@@ -741,6 +741,9 @@ select option {
         height: auto;
         text-align: center;
     }
+    .team-member .team-info{
+        text-align: start;
+    }
     /* Team section css part end */
 
 
