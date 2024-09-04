@@ -197,8 +197,17 @@ body{
     align-items: center;
     gap: 10px;
     position: absolute;
-    bottom: 70px;
+    bottom: 0px;
     left: 50px;
+    animation: video-tag 2s linear  infinite alternate;
+}
+@keyframes video-tag{
+    0%{
+        bottom: 70px;
+    }
+    100%{
+       bottom: 90px;
+    }
 }
 .banner-img .video-tag .dot{
     content: "";
@@ -223,6 +232,15 @@ body{
     top: 130px;
     right: -90px;
     padding: 17px 24px;
+    animation: workout-tag 2s linear  infinite alternate;
+}
+@keyframes workout-tag{
+    0%{
+        top: 70px;
+    }
+    100%{
+       top: 90px;
+    }
 }
 .banner-img  .workout-tag h4{
     font-size: 40px;
@@ -527,10 +545,17 @@ select option {
     }
     .banner-content {
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
     .banner-img{
         padding-top: 80px;
+    }
+    .banner-content .banner-info{
+        max-width: 100%;
+        text-align: center;
+    }
+    .duel-button{
+        justify-content: center;
     }
 
     #habits{
@@ -634,10 +659,15 @@ select option {
     }
     .banner-content {
         flex-direction: column;
+        text-align: center;
+    }
+    .banner-content .banner-info{
+        max-width: 100%;
+        text-align: center;
     }
     .banner-content .banner-info h1{
-        font-size: 35px;
-        line-height: 40px;
+        font-size: 40px;
+        line-height: 60px;
     }
     .banner-content .banner-info h1 span{
         font-size: 110px;
@@ -675,6 +705,9 @@ select option {
         font-size: 20px;
         font-weight: 900;
         line-height: 30px;
+    }
+    .duel-button{
+        justify-content: center;
     }
     /* Banner section css part end */
 
@@ -784,11 +817,11 @@ select option {
     /* Footer section css part start*/
     .footer-content .logo{
         width: 100%;
-        text-align: start;
+        text-align: center;
     }
     .footer-content{
         flex-direction: column;
-        align-items: start;
+        text-align: center;
     }
     .footer-content .servics h4{
         font-size: 25px;
