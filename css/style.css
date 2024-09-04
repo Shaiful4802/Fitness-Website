@@ -614,7 +614,7 @@ select option {
 
      /* Header section css start */
     #header .container{
-        padding: 20px;
+        padding:  0 10px;
     }
     .menu {
         display: none;
