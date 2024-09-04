@@ -523,7 +523,7 @@ select option {
         padding: 100px 20px 10px;
     }
     #header .container{
-        padding: 20px;
+        padding: 0 20px;
     }
     .banner-content {
         flex-direction: column;
